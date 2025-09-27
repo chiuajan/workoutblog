@@ -3,7 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Top Sellers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body class="bg-gray-100 p-8">
+    <h1 class="text-3xl font-bold mb-6 text-center">Top Selling Shoes</h1>
+
+    <div class="overflow-x-auto">
+      <table
+        class="table-auto border-collapse border border-gray-300 w-full bg-white shadow-lg rounded-lg"
+      >
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="border border-gray-300 px-4 py-2">Brand</th>
+            <th class="border border-gray-300 px-4 py-2">Shoe</th>
+            <th class="border border-gray-300 px-4 py-2">Image</th>
+            <th class="border border-gray-300 px-4 py-2">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Nike -->
+          <tr>
+            <td
+              rowspan="2"
+              class="border border-gray-300 px-4 py-2 font-bold text-center"
+            >
+              Nike
+            </td>
+            <td class="border border-gray-300 px-4 py-2">Nike Air Max</td>
+            <td class="border border-gray-300 px-4 py-2">
+              <img
+                src="airmax.jfif"
+                alt="Nike Air Max"
+                class="w-32 h-32 object-cover mx-auto rounded"
+              />
+            </td>
+            <td class="border border-gray-300 px-4 py-2">
+              Comfortable running shoes with air cushioning.
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-4 py-2">Nike Revolution</td>
+            <td class="border border-gray-300 px-4 py-2">
+              <img
+                src="download.jfif"
+                alt="Nike Revolution"
+                class="w-32 h-32 object-cover mx-auto rounded"
+              />
+            </td>
+            <td class="border border-gray-300 px-4 py-2">
+              Lightweight sneakers for everyday wear.
+            </td>
+          </tr>
+
+          <!-- Adidas -->
+          <tr>
+            <td
+              rowspan="2"
+              class="border border-gray-300 px-4 py-2 font-bold text-center"
+            >
+              Adidas
+            </td>
+            <td class="border border-gray-300 px-4 py-2">Adidas Ultraboost</td>
+            <td class="border border-gray-300 px-4 py-2">
+              <img
+                src="download (1).jfif"
+                alt="Adidas Ultraboost"
+                class="w-32 h-32 object-cover mx-auto rounded"
+              />
+            </td>
+            <td class="border border-gray-300 px-4 py-2">
+              High-performance running shoes with responsive boost.
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-4 py-2">Adidas Superstar</td>
+            <td class="border border-gray-300 px-4 py-2">
+              <img
+                src="download (2).jfif"
+                alt="Adidas Superstar"
+                class="w-32 h-32 object-cover mx-auto rounded"
+              />
+            </td>
+            <td class="border border-gray-300 px-4 py-2">
+              Classic sneakers with a shell toe design.
+            </td>
+          </tr>
+
+          <!-- New Balance -->
+          <tr>
+            <td
+              rowspan="2"
+              class="border border-gray-300 px-4 py-2 font-bold text-center"
+            >
+              New Balance
+            </td>
+            <td class="border border-gray-300 px-4 py-2">New Balance 574</td>
+            <td class="border border-gray-300 px-4 py-2">
+              <img
+                src="download (3).jfif"
+                alt="New Balance 574"
+                class="w-32 h-32 object-cover mx-auto rounded"
+              />
+            </td>
+            <td class="border border-gray-300 px-4 py-2">
+              Retro-inspired shoes with modern comfort.
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-4 py-2">
+              New Balance Fresh Foam
+            </td>
+            <td class="border border-gray-300 px-4 py-2">
+              <img
+                src="download (4).jfif"
+                alt="New Balance Fresh Foam"
+                class="w-32 h-32 object-cover mx-auto rounded"
+              />
+            </td>
+            <td class="border border-gray-300 px-4 py-2">
+              Cushioned trainers for long-distance running.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Back Button -->
+    <div class="mt-6 text-center">
+      <a
+        href="blog.html"
+        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+      >
+        ← Back to Blog
+      </a>
+    </div>
+  </body>
 </html>
