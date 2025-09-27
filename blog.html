@@ -1,107 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Shoe Blog</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-image: url("shoes.jpg"); /* your background image */
-        background-size: cover;
-        background-attachment: fixed;
-        margin: 0;
-        padding: 0;
-        color: #333;
-      }
-      .container {
-        background: rgba(255, 255, 255, 0.9);
-        padding: 20px;
-        margin: 30px auto;
-        max-width: 700px; /* reduced width */
-        border-radius: 10px;
-      }
-      h1 {
-        text-align: center;
-        color: #111;
-      }
-      .card {
-        background: #fff;
-        border-radius: 10px;
-        padding: 15px;
-        margin: 15px 0;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      .card h2 {
-        margin-top: 0;
-        text-align: center;
-      }
-      .card img {
-        display: block;
-        margin: 10px auto;
-        border-radius: 8px;
-        width: 250px; /* fixed smaller size */
-        height: auto;
-      }
-      a.button {
-        display: inline-block;
-        padding: 8px 12px;
-        margin-top: 10px;
-        border-radius: 5px;
-        background-color: #222;
-        color: white;
-        text-decoration: none;
-        font-size: 14px;
-        transition: 0.3s;
-      }
-      a.button:hover {
-        background-color: #444;
-      }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="container">
-      <h1>Welcome to the Shoe Blog</h1>
-      <p style="text-align: center">
+  <body
+    class="text-gray-800 bg-[url(/sales.jpeg.jpg)] min-h-screen flex flex-col justify-between"
+  >
+    <!-- Main Card Container -->
+    <div class="bg-white/90 p-6 mt-8 max-w-3xl mx-auto rounded-xl shadow-lg">
+      <h1 class="text-3xl font-bold text-center mb-4">
+        Welcome to the Shoe Blog
+      </h1>
+      <p class="text-center text-lg mb-6">
         Pick your favorite shoe brand and explore their official website:
       </p>
 
-      <!-- Adidas Card -->
-      <div class="card">
-        <h2>Adidas</h2>
-        <img src="adidas.jpeg.png" alt="Adidas Shoes" />
-        <p>
+      <!-- Adidas Section -->
+      <div class="bg-white rounded-xl p-5 shadow-md mb-6">
+        <h2 class="text-2xl font-semibold text-center mb-3">Adidas</h2>
+        <img
+          src="adidas.jpeg.png"
+          alt="Adidas Shoes"
+          class="rounded-lg mx-auto w-64 mb-3"
+        />
+        <p class="text-center">
           Adidas shoes are known for comfort and sporty style, perfect for
           running and casual wear.
         </p>
-        <a href="https://www.adidas.com" target="_blank" class="button"
-          >Go to Adidas</a
-        >
+        <div class="text-center">
+          <a
+            href="https://www.adidas.com"
+            target="_blank"
+            class="inline-block mt-4 px-4 py-2 rounded bg-gray-800 text-white hover:bg-gray-700 text-sm"
+          >
+            Go to Adidas
+          </a>
+        </div>
       </div>
 
-      <!-- Nike Card -->
-      <div class="card">
-        <h2>Nike</h2>
-        <img src="nike.jpeg.jpg" alt="Nike Shoes" />
-        <p>
+      <!-- Nike Section -->
+      <div class="bg-white rounded-xl p-5 shadow-md mb-6">
+        <h2 class="text-2xl font-semibold text-center mb-3">Nike</h2>
+        <img
+          src="nike-removebg-preview.png"
+          alt="Nike Shoes"
+          class="rounded-lg mx-auto w-64 mb-3"
+        />
+        <p class="text-center">
           Nike is famous for performance and innovation, great for training and
           basketball.
         </p>
-        <a href="https://www.nike.com" target="_blank" class="button"
-          >Go to Nike</a
-        >
+        <div class="text-center">
+          <a
+            href="https://www.nike.com"
+            target="_blank"
+            class="inline-block mt-4 px-4 py-2 rounded bg-gray-800 text-white hover:bg-gray-700 text-sm"
+          >
+            Go to Nike
+          </a>
+        </div>
       </div>
 
-      <!-- New Balance Card -->
-      <div class="card">
-        <h2>New Balance</h2>
-        <img src="images.png" alt="New Balance Shoes" />
-        <p>
+      <!-- New Balance Section -->
+      <div class="bg-white rounded-xl p-5 shadow-md mb-6">
+        <h2 class="text-2xl font-semibold text-center mb-3">New Balance</h2>
+        <img
+          src="images-removebg-preview.png"
+          alt="New Balance Shoes"
+          class="rounded-lg mx-auto w-64 mb-3"
+        />
+        <p class="text-center">
           New Balance offers comfort and stability, popular for walking and
           long-distance running.
         </p>
-        <a href="https://www.newbalance.com" target="_blank" class="button"
-          >Go to New Balance</a
-        >
+        <div class="text-center">
+          <a
+            href="https://www.newbalance.com"
+            target="_blank"
+            class="inline-block mt-4 px-4 py-2 rounded bg-gray-800 text-white hover:bg-gray-700 text-sm"
+          >
+            Go to New Balance
+          </a>
+        </div>
       </div>
+    </div>
+
+    <div class="text-center mt-6 mb-8">
+      <a
+        href="topseller.html"
+        class="inline-block px-5 py-3 rounded-full bg-red-600 text-white hover:bg-red-700 text-base font-semibold shadow-lg transition"
+      >
+        Top Seller
+      </a>
     </div>
   </body>
 </html>
